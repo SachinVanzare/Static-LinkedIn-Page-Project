@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /************************** Header Starts ***************************/
 
-.Header{
+.Header {
     display: flex;
     flex-direction: row;
     height: 60px;
@@ -15,9 +16,10 @@
     align-items: center;
     /* justify-content: space-evenly; */
 }
+
 /************************** First Header Parts ***************************/
 
-.Header .start-head{
+.Header .start-head {
     width: 600px;
     height: 60px;
     display: flex;
@@ -28,15 +30,16 @@
     margin-top: 20px;
     margin-left: 20px;
 }
-.Header .start-head img{
-    height: 40px;
-    
 
+.Header .start-head img {
+    height: 40px;
 }
-.Header .start-head .search{
+
+.Header .start-head div {
     display: flex;
 }
-.Header .start-head .search img{
+
+.Header .start-head .search img {
     background-color: #dde3e3;
     height: 40px;
     border-top-left-radius: 5px;
@@ -45,7 +48,8 @@
     padding-left: 15px;
     padding-right: 5px;
 }
-.Header .start-head .search input{
+
+.Header .start-head .search input {
     height: 40px;
     width: 300px;
     border: 1px white;
@@ -56,22 +60,26 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
 /************************** Second Header Parts ***************************/
 
 /************************** Home Tab ***************************/
 
-.Header .mid-head{
+.Header .mid-head {
     width: 480px;
     height: 60px;
     /* background-color: lawngreen; */
     border-right: 1px solid black;
     display: flex;
     margin-top: 20px;
+    font-size: 90px;
     margin-left: 30px;
     align-content: space-between;
-    /* justify-content: center; */
+    justify-content: center;
+    /* border: 1px solid black; */
 }
-.Header .mid-head .home{
+
+.Header .mid-head .home {
     width: 80px;
     height: 60px;
     /* background-color: lightcoral; */
@@ -79,46 +87,55 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid black; */
 }
-.Header .mid-head .home img{
+
+.Header .mid-head .home img {
     height: 30px;
     width: 33px;
     padding: 4px;
     margin-left: 3px;
 }
-.Header .mid-head .home_txt{
-    font-size:15px;
+
+.Header .mid-head .home_txt {
+    font-size: 13px;
 }
-.home:hover{
-    cursor:pointer;
+
+.home:hover {
+    cursor: pointer;
 }
+
 /************************** Network Tab ***************************/
 
-.Header .mid-head .network{
+.Header .mid-head .network {
     width: 80px;
     height: 60px;
     /* background-color: lightseagreen; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -3px;
+    /* margin-top: -3px; */
     align-items: center;
+    /* border: 1px solid black; */
 }
-.Header .mid-head .network img{
+
+.Header .mid-head .network img {
     height: 35px;
     width: 35px;
     /* padding: 4px; */
-    margin-left: 3px;
+    margin-top: -4px;
 }
-.Header .mid-head .network .home_txt{
+
+/* .Header .mid-head .network .home_txt{
     font-size: 15px;
     text-align: center;
+} */
+.network:hover {
+    cursor: pointer;
 }
-.network:hover{
-    cursor:pointer;
-}
+
 /************************** Job Tab ***************************/
-.Header .mid-head .job{
+.Header .mid-head .job {
     width: 80px;
     height: 60px;
     /* background-color: lightcoral; */
@@ -126,99 +143,117 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid black; */
 }
-.Header .mid-head .job img{
+
+.Header .mid-head .job img {
     height: 30px;
     width: 30px;
     /* padding: 4px; */
     margin-left: 3px;
 }
-.Header .mid-head .job .home_txt{
+
+/* .Header .mid-head .job .home_txt{
     font-size: 15px;
     text-align: center;
+} */
+.job:hover {
+    cursor: pointer;
 }
-.job:hover{
-    cursor:pointer;
-}
+
 /************************** Messaging Tab ***************************/
-.Header .mid-head .msg{
+.Header .mid-head .msg {
     width: 80px;
     height: 60px;
     /* background-color: lightseagreen; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 1px solid black; */
     align-items: center;
 }
-.Header .mid-head .msg img{
+
+.Header .mid-head .msg img {
     height: 30px;
     width: 30px;
     /* padding: 4px; */
     margin-left: 3px;
 }
-.Header .mid-head .msg .home_txt{
+
+/* .Header .mid-head .msg .home_txt{
     font-size: 15px;
     text-align: center;
+} */
+.msg:hover {
+    cursor: pointer;
 }
-.msg:hover{
-    cursor:pointer;
-}
+
 /************************** Notification Tab ***************************/
-.Header .mid-head .notify{
+.Header .mid-head .notify {
     width: 80px;
     height: 60px;
     /* background-color: lightcoral; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 1px solid black; */
     align-items: center;
 }
-.Header .mid-head .notify img{
+
+.Header .mid-head .notify img {
     height: 30px;
     width: 30px;
     /* padding: 4px; */
     margin-left: 3px;
 }
-.Header .mid-head .notify .home_txt{
+
+/* .Header .mid-head .notify .home_txt{
     font-size: 15px;
     text-align: center;
+} */
+.notify:hover {
+    cursor: pointer;
 }
-.notify:hover{
-    cursor:pointer;
-}
+
 /************************** Me Tab ***************************/
-.Header .mid-head .me1{
+.Header .mid-head .me1 {
     width: 80px;
     height: 60px;
     /* background-color: lightseagreen; */
     display: flex;
     flex-direction: column;
-    margin-top: 4px;
+    /* margin-top: 4px; */
     justify-content: center;
+    /* border: 1px solid black; */
     align-items: center;
-    margin-bottom: 30px;
+    font-size: 4px;
+    /* margin-bottom: 300px; */
 }
-.Header .mid-head .me1 .me2 img{
+
+.Header .mid-head .me1 .me2 img {
     width: 30px;
     height: 30px;
-    /* margin-top: 15px; */
+    margin-top: 13px;
     border-radius: 15px;
 }
-.Header .mid-head .me1 .ME{
+
+.Header .mid-head .me1 .ME {
     margin-top: -5px;
 }
 
-.Header .mid-head .me1 .ME img{
+.Header .mid-head .me1 .ME img {
     height: 20px;
     width: 20px;
     margin-bottom: -5px;
-    margin-left: -3px;
+    /* margin-left: -3px; */
 }
-.me1:hover{
-    cursor:pointer;
+
+.me1:hover {
+    cursor: pointer;
 }
+
 /************************** For Business ***************************/
-.Header .end-head{
+.Header .end-head {
     width: 300px;
     height: 60px;
     /* background-color: rgb(229, 69, 173); */
@@ -228,76 +263,90 @@
     align-items: center;
     margin-top: 25px;
 }
-.Header .end-head .business{
+
+.Header .end-head .business {
     height: 60px;
     width: 120px;
     display: flex;
     /* background-color: lightpink; */
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding-bottom: 8px; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
 }
-.Header .end-head .business .bus-img{
+
+.Header .end-head .business .bus-img {
     height: 60px;
-    width: 110px;
+    /* width: 110px; */
     display: flex;
     justify-content: center;
     /* margin-top: 20px; */
     /* align-items: center; */
 }
-.Header .end-head .business .bus-img img{
+
+.Header .end-head .business .bus-img img {
     width: 20px;
     height: 20px;
-    margin-top: 10px;
+    margin-top: 18px;
     /* margin-bottom: 10px; */
 }
-.Header .end-head .ME{
-    font-size: 15px;
+
+.Header .end-head .ME {
+    font-size: 13px;
     margin-top: 0px;
 }
-.Header .end-head .ME img{
+
+.Header .end-head .ME img {
     height: 20px;
     width: 20px;
     margin-bottom: -5px;
 }
-.me1:hover{
-    cursor:pointer;
+
+.me1:hover {
+    cursor: pointer;
 }
+
 /**************************   ***************************/
-.Header .end-head .last{
+.Header .end-head .last {
     height: 60px;
-    width: 150px;
+    width: 180px;
     display: flex;
-    border: 2px solid black;
+    justify-content: left;
+    align-items: center;
+    /* border: 2px solid black; */
     /* background-color: brown; */
 }
-.Header .end-head .last .txt{
-    font-size: 15px;
-    color: inherit;
+
+.Header .end-head .last p a {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    /* background-color: yellow; */
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
     padding: 11px;
 }
+
 /************************** Main Content ***************************/
 
-.main-content{
-    height:fit-content;
+.main-content {
+    height: fit-content;
     width: 100vw;
     display: grid;
     margin-top: 25px;
     justify-content: center;
     grid-template-columns: 20% 40% 25%;
-    grid-template-areas: 
-    "first second third"
-    "first second third";
+    grid-template-areas:
+        "first second third"
+        "first second third";
     /* grid-gap: 20px; */
     /* gap: 20px; */
     background-color: rgb(193, 199, 199);
 }
+
 /************************** Side Panel ***************************/
 
-.main-content .first1{
+.main-content .first1 {
     background-color: rgb(193, 199, 199);
     grid-area: first;
     margin-top: 25px;
@@ -307,7 +356,8 @@
     display: flex;
     flex-direction: column;
 }
-.main-content .first1 .one_div{
+
+.main-content .first1 .one_div {
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -315,19 +365,22 @@
     /* margin-bottom: 20px; */
     border-radius: 10px;
 }
-.main-content .first1 .f1{
+
+.main-content .first1 .f1 {
     background-color: rgb(210, 94, 236);
     height: 100px;
     width: 100%;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     align-content: center;
 }
-.main-content .first1 .f2{
+
+.main-content .first1 .f2 {
     width: 100%;
     justify-content: center;
 }
-.main-content .first1 .f2 img{
+
+.main-content .first1 .f2 img {
     height: 100px;
     width: 100px;
     margin-top: -50px;
@@ -335,14 +388,16 @@
     border-radius: 50%;
     border: 2.5px solid white;
 }
-.main-content .first1 .name{
+
+.main-content .first1 .name {
     text-align: center;
     margin-top: 20px;
     color: rgb(60, 58, 58);
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(64, 62, 62);
 }
-.main-content .first1 .oth{
+
+.main-content .first1 .oth {
     color: rgb(77, 76, 76);
     padding: 20px 15px;
     display: flex;
@@ -350,28 +405,34 @@
     font-size: 15px;
     border-bottom: 1px solid rgb(64, 62, 62);
 }
-.main-content .first1 .oth p{
+
+.main-content .first1 .oth p {
     float: left;
 }
-.main-content .first1 .oth .two9{
+
+.main-content .first1 .oth .two9 {
     color: rgb(77, 76, 76);
     float: right;
     color: blue;
     float: right;
     font-weight: 700;
 }
-.main-content .first1 .oth1{
-    font-size: 15px;color: rgb(51, 51, 51);
+
+.main-content .first1 .oth1 {
+    font-size: 15px;
+    color: rgb(51, 51, 51);
     padding: 10px 10px;
     border-bottom: 1px solid rgb(64, 62, 62);
 }
-.main-content .first1 .one_div .item{
+
+.main-content .first1 .one_div .item {
     padding: 10px;
 }
-.main-content .first1 .two_div{
-    height:fit-content;
+
+.main-content .first1 .two_div {
+    height: fit-content;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     grid-area: first;
     border-radius: 10px;
@@ -381,12 +442,14 @@
     gap: 10px;
     background-color: white;
 }
-.main-content .first1 .two_div h4{
+
+.main-content .first1 .two_div h4 {
     color: blue;
 }
+
 /************************** Posts one ***************************/
 
-.main-content .second2{
+.main-content .second2 {
     /* background-color: white; */
     height: fit-content;
     grid-area: second;
@@ -397,7 +460,8 @@
     display: flex;
     flex-direction: column;
 }
-.main-content .second2 .post1{
+
+.main-content .second2 .post1 {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -405,78 +469,93 @@
     flex-direction: column;
     border-radius: 10px;
 }
-.main-content .second2 .post1 .post_one{
+
+.main-content .second2 .post1 .post_one {
     padding: 15px 7px 10px 15px;
     display: flex;
     /* background-color: rgb(56, 64, 64); */
 }
-.main-content .second2 .post1 .post_one img{
+
+.main-content .second2 .post1 .post_one img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
-.main-content .second2 .post1 .post_one input{
+
+.main-content .second2 .post1 .post_one input {
     width: 500px;
     height: 50px;
     border-radius: 25px;
     justify-content: center;
     /* background-color: aqua; */
-    padding-left:13px ;
+    padding-left: 13px;
     margin-top: 0px;
     margin-left: 10px;
 }
-.main-content .second2 .post1 .post_two{
+
+.main-content .second2 .post1 .post_two {
     display: flex;
     width: 100%;
     height: fit-content;
     /* background-color: aqua; */
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding-top: 10px;
 }
-.main-content .second2 .post1 .post_two{
+
+.main-content .second2 .post1 .post_two {
     cursor: pointer;
 }
-span{
+
+span {
     /* text-align: center; */
     margin: 6px;
 }
-.main-content .second2 .post1 .post_two .img1{
-   display: flex;
-   align-content:center ;
+
+.main-content .second2 .post1 .post_two .img1 {
+    display: flex;
+    align-content: center;
 }
-.main-content .second2 .post1 .post_two .img1 img{
+
+.main-content .second2 .post1 .post_two .img1 img {
     width: 30px;
     height: 30px;
 }
-.main-content .second2 .post1 .post_two .img2{
+
+.main-content .second2 .post1 .post_two .img2 {
     display: flex;
-   align-content:center ;
+    align-content: center;
 }
-.main-content .second2 .post1 .post_two .img2 img{
+
+.main-content .second2 .post1 .post_two .img2 img {
     width: 50px;
     height: 50px;
     margin-top: -10px;
 }
-.main-content .second2 .post1 .post_two .img3{
+
+.main-content .second2 .post1 .post_two .img3 {
     display: flex;
-   align-content:center ;
+    align-content: center;
 }
-.main-content .second2 .post1 .post_two .img3 img{
+
+.main-content .second2 .post1 .post_two .img3 img {
     width: 50px;
     height: 50px;
     margin-top: -8px;
 }
-.main-content .second2 .post1 .post_two .img4{
+
+.main-content .second2 .post1 .post_two .img4 {
     display: flex;
-   align-content:center ;
+    align-content: center;
 }
-.main-content .second2 .post1 .post_two .img4 img{
+
+.main-content .second2 .post1 .post_two .img4 img {
     width: 50px;
     height: 50px;
     margin-top: -4px;
 }
+
 /************************** Post Two ***************************/
-.main-content .second2 .post2{
+.main-content .second2 .post2 {
     width: 100%;
     height: fit-content;
     background-color: white;
@@ -484,32 +563,38 @@ span{
     flex-direction: column;
     border-radius: 4px;
 }
-.main-content .second2 .post2 .p21{
+
+.main-content .second2 .post2 .p21 {
     height: fit-content;
     width: 100%;
     display: flex;
     margin: 8px auto 15px auto;
 }
-.main-content .second2 .post2 .p21 .myntra img{
+
+.main-content .second2 .post2 .p21 .myntra img {
     width: 50px;
     height: 50px;
     margin: auto 10px;
     cursor: pointer;
 }
-.main-content .second2 .post2 .info{
+
+.main-content .second2 .post2 .info {
     height: 40px;
     width: 100%;
     cursor: pointer;
     /* background-color: aqua; */
     margin: auto 0;
 }
-.main-content .second2 .post2 .info p{
+
+.main-content .second2 .post2 .info p {
     font-size: 10px;
 }
-.main-content .second2 .post2 .p22 img{
+
+.main-content .second2 .post2 .p22 img {
     width: 100%;
 }
-.main-content .second2 .post2 .p21 span{
+
+.main-content .second2 .post2 .p21 span {
     height: 20px;
     width: 10px;
     font-size: 30px;
@@ -518,10 +603,12 @@ span{
     margin-top: -50px;
     margin-right: 30px;
 }
-.main-content .second2 .post2 .p21 span .dot{
+
+.main-content .second2 .post2 .p21 span .dot {
     cursor: pointer;
 }
-.main-content .second2 .post2 .p23{
+
+.main-content .second2 .post2 .p23 {
     margin: 4px 10px 8px 10px;
     width: 170px;
     /* background-color: aqua; */
@@ -529,11 +616,13 @@ span{
     display: flex;
     justify-content: space-evenly;
 }
-.main-content .second2 .post2 .p23 div{
+
+.main-content .second2 .post2 .p23 div {
     /* margin-bottom: 15px; */
     margin-left: 15px;
 }
-.main-content .second2 .post2 .p24{
+
+.main-content .second2 .post2 .p24 {
     display: flex;
     justify-content: space-evenly;
     height: fit-content;
@@ -544,7 +633,7 @@ span{
 
 /************************** Post Third ***************************/
 
-.main-content .second2 .post3{
+.main-content .second2 .post3 {
     width: 100%;
     height: fit-content;
     background-color: white;
@@ -552,41 +641,49 @@ span{
     flex-direction: column;
     border-radius: 4px;
 }
-.main-content .second2 .post3 .p21{
+
+.main-content .second2 .post3 .p21 {
     height: fit-content;
     width: 100%;
     display: flex;
     margin: 8px auto 15px auto;
 }
-.main-content .second2 .post3 .p21 .myntra img{
+
+.main-content .second2 .post3 .p21 .myntra img {
     width: 50px;
     height: 50px;
     margin: auto 10px;
     cursor: pointer;
 }
-.main-content .second2 .post3 .info{
+
+.main-content .second2 .post3 .info {
     height: 40px;
     width: 100%;
     cursor: pointer;
     /* background-color: aqua; */
     margin: auto 0;
 }
-.main-content .second2 .post3 .p2{
+
+.main-content .second2 .post3 .p2 {
     margin: 5px 10px 10px 10px;
     justify-content: center;
 }
-.main-content .second2 .post3 .p2 p{
+
+.main-content .second2 .post3 .p2 p {
     justify-content: center;
     font-size: 15px;
     text-align: justify;
 }
-.main-content .second2 .post3 .info p{
+
+.main-content .second2 .post3 .info p {
     font-size: 10px;
 }
-.main-content .second2 .post3 .p22 img{
+
+.main-content .second2 .post3 .p22 img {
     width: 100%;
 }
-.main-content .second2 .post3 .p21 span{
+
+.main-content .second2 .post3 .p21 span {
     height: 20px;
     width: 10px;
     font-size: 30px;
@@ -595,10 +692,12 @@ span{
     margin-top: -50px;
     margin-right: 30px;
 }
-.main-content .second2 .post3 .p21 span .dot{
+
+.main-content .second2 .post3 .p21 span .dot {
     cursor: pointer;
 }
-.main-content .second2 .post3 .p23{
+
+.main-content .second2 .post3 .p23 {
     margin: 4px 10px 8px 10px;
     width: 170px;
     /* background-color: aqua; */
@@ -606,11 +705,13 @@ span{
     display: flex;
     justify-content: space-evenly;
 }
-.main-content .second2 .post3 .p23 div{
+
+.main-content .second2 .post3 .p23 div {
     /* margin-bottom: 15px; */
     margin-left: 15px;
 }
-.main-content .second2 .post3 .p24{
+
+.main-content .second2 .post3 .p24 {
     display: flex;
     justify-content: space-evenly;
     height: fit-content;
@@ -618,9 +719,10 @@ span{
     padding: 5px 10px;
     cursor: pointer;
 }
+
 /************************** Third Column ***************************/
 
-.main-content .third3{
+.main-content .third3 {
     /* background-color: blue; */
     height: fit-content;
     grid-area: third;
@@ -631,9 +733,10 @@ span{
     flex-direction: column;
     grid-gap: 20px;
 }
+
 /************************** First Div ***************************/
 
-.main-content .third3 .post1{
+.main-content .third3 .post1 {
     display: flex;
     background-color: rgb(255, 255, 255);
     flex-direction: column;
@@ -641,28 +744,32 @@ span{
     height: fit-content;
     width: 100%;
 }
-.main-content .third3 .post1 .div1{
+
+.main-content .third3 .post1 .div1 {
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
     border-radius: 5px;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.main-content .third3 .post1 .div1 .title{
+
+.main-content .third3 .post1 .div1 .title {
     padding: 10px;
     margin: 8px;
     font-size: 20px;
     font-weight: 600;
     float: left;
 }
-.main-content .third3 .post1 .div1 div i{
+
+.main-content .third3 .post1 .div1 div i {
     float: right;
     cursor: pointer;
     margin: 10px;
     padding: 10px;
 }
-.main-content .third3 .post1 .div2{
+
+.main-content .third3 .post1 .div2 {
     width: 100%;
     height: fit-content;
     padding-left: 30px;
@@ -672,9 +779,10 @@ span{
     flex-direction: column;
     margin-bottom: 10px;
 }
+
 /************************** Second Div ***************************/
 
-.main-content .third3 .post2{
+.main-content .third3 .post2 {
     display: flex;
     background-color: rgb(255, 255, 255);
     flex-direction: column;
@@ -682,28 +790,32 @@ span{
     height: fit-content;
     width: 100%;
 }
-.main-content .third3 .post2 .div1{
+
+.main-content .third3 .post2 .div1 {
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
     border-radius: 5px;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.main-content .third3 .post2 .div1 .title{
+
+.main-content .third3 .post2 .div1 .title {
     padding: 10px;
     font-size: 20px;
     margin: 8px;
     font-weight: 600;
     float: left;
 }
-.main-content .third3 .post2 .div1 div i{
+
+.main-content .third3 .post2 .div1 div i {
     float: right;
     margin: 10px;
     cursor: pointer;
     padding: 10px;
 }
-.main-content .third3 .post2 .div2{
+
+.main-content .third3 .post2 .div2 {
     width: 100%;
     height: fit-content;
     padding-left: 30px;
@@ -713,8 +825,9 @@ span{
     flex-direction: column;
     margin-bottom: 10px;
 }
+
 /************************** Third Div ***************************/
-.main-content .third3 .post3{
+.main-content .third3 .post3 {
     display: flex;
     background-color: rgb(255, 255, 255);
     flex-direction: column;
@@ -722,47 +835,55 @@ span{
     height: fit-content;
     width: 100%;
 }
-.main-content .third3 .post3 .div1{
+
+.main-content .third3 .post3 .div1 {
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
     border-radius: 5px;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.main-content .third3 .post3 .div1 .title{
+
+.main-content .third3 .post3 .div1 .title {
     padding: 10px;
     font-size: 20px;
     margin: 8px;
     font-weight: 600;
     float: left;
 }
-.main-content .third3 .post3 .div1 div i{
+
+.main-content .third3 .post3 .div1 div i {
     float: right;
     margin: 10px;
     cursor: pointer;
     padding: 10px;
 }
+
 /**************************   ***************************/
-.main-content .third3 .post3 .div2{
+.main-content .third3 .post3 .div2 {
     height: fit-content;
     width: 100%;
     display: flex;
 }
-.main-content .third3 .post3 .div2 .p21{
+
+.main-content .third3 .post3 .div2 .p21 {
     height: fit-content;
     width: 100%;
     display: flex;
 }
-.main-content .third3 .post3 .div2 .p21 .myntra img{
+
+.main-content .third3 .post3 .div2 .p21 .myntra img {
     height: 50px;
     width: 50px;
     margin: 15px;
 }
-.main-content .third3 .post3 .div2 .p21 .info{
+
+.main-content .third3 .post3 .div2 .p21 .info {
     margin: 18px 15px 15px 15px;
 }
-.main-content .third3 .post3 .div2 .p21 .info .btn{
+
+.main-content .third3 .post3 .div2 .p21 .info .btn {
     width: 200px;
     height: 40px;
     border: 2px solid black;
@@ -774,36 +895,41 @@ span{
     cursor: pointer;
 }
 
-.main-content .third3 .post3 h3{
+.main-content .third3 .post3 h3 {
     /* display: contents; */
     /* background-color: aqua; */
     /* color: red; */
     cursor: pointer;
 }
 
-.main-content .third3 .post3 img{
+.main-content .third3 .post3 img {
     cursor: pointer;
 }
+
 /**************************   ***************************/
-.main-content .third3 .post3 .div3{
+.main-content .third3 .post3 .div3 {
     height: fit-content;
     width: 100%;
     display: flex;
 }
-.main-content .third3 .post3 .div3 .p21{
+
+.main-content .third3 .post3 .div3 .p21 {
     height: fit-content;
     width: 100%;
     display: flex;
 }
-.main-content .third3 .post3 .div3 .p21 .myntra img{
+
+.main-content .third3 .post3 .div3 .p21 .myntra img {
     height: 50px;
     width: 50px;
     margin: 15px;
 }
-.main-content .third3 .post3 .div3 .p21 .info{
+
+.main-content .third3 .post3 .div3 .p21 .info {
     margin: 18px 15px 15px 15px;
 }
-.main-content .third3 .post3 .div3 .p21 .info .btn{
+
+.main-content .third3 .post3 .div3 .p21 .info .btn {
     width: 200px;
     height: 40px;
     border: 2px solid black;
@@ -817,25 +943,29 @@ span{
 
 /**************************   ***************************/
 
-.main-content .third3 .post3 .div4{
+.main-content .third3 .post3 .div4 {
     height: fit-content;
     width: 100%;
     display: flex;
 }
-.main-content .third3 .post3 .div4 .p21{
+
+.main-content .third3 .post3 .div4 .p21 {
     height: fit-content;
     width: 100%;
     display: flex;
 }
-.main-content .third3 .post3 .div4 .p21 .myntra img{
+
+.main-content .third3 .post3 .div4 .p21 .myntra img {
     height: 50px;
     width: 50px;
     margin: 15px;
 }
-.main-content .third3 .post3 .div4 .p21 .info{
+
+.main-content .third3 .post3 .div4 .p21 .info {
     margin: 18px 15px 15px 15px;
 }
-.main-content .third3 .post3 .div4 .p21 .info .btn{
+
+.main-content .third3 .post3 .div4 .p21 .info .btn {
     width: 200px;
     height: 40px;
     border: 2px solid black;
@@ -845,4 +975,43 @@ span{
     font-weight: 600;
     padding-top: 4px;
     cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 769px) {
+    .Header>.start-head>.search>input {
+        width: 100%;
+    }
+
+    .main-content {
+        display: block;
+    }
+
+    .main-content .first1 .f2 img {
+        margin-left: 150px;
+    }
+
+    .main-content>.first1,
+    .main-content>.second2,
+    .main-content>.third3 {
+        margin: 10px;
+        width: 400px;
+    }
+
+    /* .main-content .second2 .post1 .post_two{
+        width: 80%;
+    } */
+}
+
+@media screen and (min-width: 769px) {
+    .main-content {
+        /* display: flex; */
+        gap: 20px;
+    }
+
+    .main-content>.first1,
+    .main-content>.second2,
+    .main-content>.third3 {
+        flex: 1;
+    }
 }
